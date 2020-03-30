@@ -1,0 +1,342 @@
+<html>
+<head>
+	<title>D:\cpp2html.v1.02\test.cpp</title>
+	<LINK href="cpp.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<pre><span class="comment">//1
+</span><span class="macro">#include &lt;iostream&gt;
+</span><span class="macro">#include &lt;unistd.h&gt;
+</span><span class="keyword">using</span> <span class="keyword">namespace</span> std;
+<span class="keyword">int</span> main()
+{
+   <span class="keyword">int</span> pas = <span class="numeric">666666</span>;
+    <span class="keyword">for</span> (<span class="keyword">int</span> y = <span class="numeric">1</span>;y &lt;= <span class="numeric">3</span>; y++)
+    {
+   
+     cout &lt;&lt; <span class="literal">"  请输入手机密码:                        "</span>&lt;&lt; endl;
+     cin &gt;&gt; pas;
+     cout &lt;&lt; <span class="literal">"正在确认……"</span>&lt;&lt; endl;
+     sleep (<span class="numeric">2</span>);
+    <span class="keyword">if</span>(pas == <span class="numeric">666666</span>)
+    
+ {  cout &lt;&lt; <span class="literal">" -------------------------------------"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |          欢迎使用竖钗手机         |"</span> &lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" -------------------------------------"</span>&lt;&lt; endl;  
+    <span class="keyword">break</span>;
+ }
+    <span class="keyword">if</span>(y &lt; <span class="numeric">3</span>)
+    {
+          cout &lt;&lt; <span class="literal">"  密码错误"</span> &lt;&lt; endl;
+    }
+       
+    
+    
+    <span class="keyword">if</span>(y == <span class="numeric">3</span>)
+    {
+          cout &lt;&lt; <span class="literal">"    三次输入都错误，手机已经被永久冻结"</span> &lt;&lt; endl;
+          <span class="keyword">return</span> <span class="numeric">0</span>;
+    }
+    }
+    sleep (<span class="numeric">2</span>);
+    cout &lt;&lt; <span class="literal">"1.使用 2.关闭"</span>&lt;&lt; endl;
+    <span class="keyword">int</span> x;
+    cin &gt;&gt; x;
+    <span class="keyword">if</span> (x == <span class="numeric">2</span>)
+    {
+        cout &lt;&lt;<span class="literal">"拜拜~"</span>&lt;&lt; endl;
+        <span class="keyword">return</span> <span class="numeric">0</span>;
+    }
+    <span class="keyword">if</span> (x == <span class="numeric">1</span>)
+    {
+    cout &lt;&lt; <span class="literal">" -------------------------------------"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |  |---|             |---|          |"</span> &lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |  |---|             |---|          |"</span> &lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |推理：丧尸     长方形万能计算器    |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |    |---|                          |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |    |---|                          |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" | 非按键计算器                      |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" |                                   |"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">" -------------------------------------"</span>&lt;&lt; endl;  
+    cout &lt;&lt; <span class="literal">"选择游戏："</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">"1.推理：丧尸 2.长方形万能计算器 3.非按键计算器"</span>&lt;&lt; endl;
+    <span class="keyword">int</span> gco;
+    cin &gt;&gt; gco;
+    <span class="keyword">if</span> (gco == <span class="numeric">1</span>)
+{
+    cout &lt;&lt; <span class="literal">"正在载入……"</span>&lt;&lt; endl;
+    sleep (<span class="numeric">3</span>);
+    cout &lt;&lt; <span class="literal">"loading……"</span>&lt;&lt; endl;
+    sleep (<span class="numeric">2</span>);
+    cout &lt;&lt; <span class="literal">"进入游戏，"</span>&lt;&lt; endl;
+    sleep (<span class="numeric">2</span>);
+    cout &lt;&lt; <span class="literal">"背景："</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">"你听到楼下有动静，你一个人在家，要不要下去看看？"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">"1.下去看看 2.怕了怕了，睡觉吧"</span>&lt;&lt; endl;
+    <span class="keyword">int</span> chooseone;
+    cin &gt;&gt; chooseone;
+    <span class="keyword">if</span> (chooseone == <span class="numeric">1</span>)
+    {
+        cout &lt;&lt; <span class="literal">"你从前门刚走，丧尸就从后门冲进来拆了你房子，你躲过了它们"</span>&lt;&lt; endl;
+    }
+    <span class="keyword">else</span>
+    {
+        cout &lt;&lt; <span class="literal">"你刚准备睡觉，丧尸就从后门冲进来拆了你房子，撕碎了你"</span>&lt;&lt; endl;
+        cout &lt;&lt; <span class="literal">"游戏结束"</span>&lt;&lt; endl;
+        <span class="keyword">return</span> <span class="numeric">0</span>;
+    }
+    sleep (<span class="numeric">2</span>);
+    cout &lt;&lt; <span class="literal">"你来到荒野上，发现一把Ak-47，一把手榴弹，一块红豆面包"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">"1. 捡起 2.有诈！快跑！"</span>&lt;&lt; endl;
+    <span class="keyword">int</span> choosetwo;
+    cin &gt;&gt; choosetwo;
+    <span class="keyword">if</span> (choosetwo == <span class="numeric">1</span>)
+    {
+        cout &lt;&lt; <span class="literal">"Ak-47里有子弹，你获得了武装，当丧尸来临时，你击杀了他们，获得一个火柴盒"</span>&lt;&lt; endl;
+    }
+    <span class="keyword">if</span> (choosetwo == <span class="numeric">2</span>)
+    {
+        cout &lt;&lt; <span class="literal">"骚年，你是不是有侵略妄想症啊？当丧尸来临时，他们撕碎了你，你死了"</span>&lt;&lt; endl;
+        cout &lt;&lt; <span class="literal">"游戏结束"</span>&lt;&lt; endl;
+        <span class="keyword">return</span> <span class="numeric">0</span>;
+    }
+    sleep (<span class="numeric">2</span>);
+    cout &lt;&lt; <span class="literal">"你看见了一架飞机在不远处，是否向前探索？"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">"1.是！2.这回肯定有诈，快溜快溜！"</span>&lt;&lt; endl;
+    <span class="keyword">int</span> choosethree;
+    cin &gt;&gt; choosethree;
+    <span class="keyword">if</span> (choosethree == <span class="numeric">1</span>)
+    {
+        cout &lt;&lt; <span class="literal">"这回你可得小心点！确实有诈，丧尸尝试攻击了你，但你用手雷反抗，活了下来，夺取飞机"</span>&lt;&lt; endl;
+        cout &lt;&lt; <span class="literal">"有一个说明书，你打开了它，学会了驾驶飞机，现在是否起航去主城逃避灾难？"</span>&lt;&lt; endl;
+        cout &lt;&lt; <span class="literal">"1.干紧溜号，走为上策！2.待会，让我欣赏回风景"</span>&lt;&lt; endl;
+        <span class="keyword">int</span> choosetofour;
+        cin &gt;&gt; choosetofour;
+        <span class="keyword">if</span> (choosetofour == <span class="numeric">1</span>)
+        {
+            cout &lt;&lt; <span class="literal">"你逃脱啦！给自己一个赞吧~"</span>&lt;&lt; endl;
+            <span class="keyword">return</span> <span class="numeric">0</span>;
+        }
+    }
+        <span class="keyword">if</span> (choosetwo == <span class="numeric">2</span>)
+        {
+            cout &lt;&lt; <span class="literal">"兄dei，有机会还不跑？你被丧尸攻击了，这回你用完了Ak-47的子弹，丧尸是被消灭了，但你也死了……"</span>&lt;&lt; endl;
+            <span class="keyword">return</span> <span class="numeric">0</span>;
+        }    
+    <span class="keyword">if</span> (choosethree == <span class="numeric">2</span>)
+    {
+        cout &lt;&lt; <span class="literal">"你远离了飞机，失去了求生的希望，但你还没死，还有一次机会"</span>&lt;&lt; endl;
+        sleep (<span class="numeric">2</span>);
+        cout &lt;&lt; <span class="literal">"前方有一波丧尸，是否攻击？"</span>&lt;&lt; endl;
+        cout &lt;&lt; <span class="literal">"1.手雷在手，天下我有！攻击！ 2.溜号"</span>&lt;&lt; endl;
+        <span class="keyword">int</span> choosettfour;
+        cin &gt;&gt; choosettfour;
+        <span class="keyword">if</span> (choosettfour == <span class="numeric">1</span>)
+        {
+            cout &lt;&lt; <span class="literal">"勇猛的骚年！但是你依然被撕碎了……"</span>&lt;&lt; endl;
+            cout &lt;&lt; <span class="literal">"游戏结束~"</span>&lt;&lt; endl;
+            <span class="keyword">return</span> <span class="numeric">0</span>;
+        }
+        <span class="keyword">if</span> (choosettfour == <span class="numeric">2</span>)
+        {
+            cout &lt;&lt; <span class="literal">"走为上策！你十分优秀，偶然遇到了传送门，你逃脱了"</span>&lt;&lt; endl;
+            cout &lt;&lt; <span class="literal">"你逃脱啦！给自己一个赞吧~"</span>&lt;&lt; endl;
+            <span class="keyword">return</span> <span class="numeric">0</span>;
+        } 
+    }
+        
+}
+    
+    <span class="keyword">if</span> (gco == <span class="numeric">2</span>)
+    {
+        cout &lt;&lt; <span class="literal">"欢迎使用长方形万能计算器."</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">"请输入要求的东西：（填写数字）"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">"1.面积 2.周长 3.长 4.宽"</span>&lt;&lt; endl;
+    <span class="keyword">float</span> a,b,c,d,e,f,g,h,i,k,l,m,n,o,p,q;
+
+    cin &gt;&gt; a;
+    <span class="keyword">if</span> (a == <span class="numeric">1</span>)
+    {
+        cout &lt;&lt;  <span class="literal">"请问你要用普通方法（长x宽）求还是周长求？"</span>&lt;&lt; endl;
+        cout &lt;&lt;  <span class="literal">"1.用普通方法（长x宽）求 2.用周长求"</span>&lt;&lt; endl;
+        cin &gt;&gt; k;
+    }    
+        <span class="keyword">if</span> (k == <span class="numeric">1</span>)
+    {   
+        cout &lt;&lt; <span class="literal">"请输入长："</span>&lt;&lt; endl;
+        cin &gt;&gt; b;
+        cout &lt;&lt; <span class="literal">"请输入宽："</span>&lt;&lt; endl;
+        cin &gt;&gt; c;
+        cout &lt;&lt; <span class="literal">"面积："</span> &lt;&lt;b*c &lt;&lt; endl;
+    }
+    
+        <span class="keyword">if</span> (k == <span class="numeric">2</span>)
+    {
+        cout &lt;&lt; <span class="literal">"请输入周长："</span>&lt;&lt; endl;
+        cin &gt;&gt; l;
+        cout &lt;&lt; <span class="literal">"请输入宽："</span>&lt;&lt; endl;
+        cin &gt;&gt; m;
+        cout &lt;&lt; <span class="literal">"长："</span>&lt;&lt; l/<span class="numeric">2</span> - m &lt;&lt; endl;
+        cout &lt;&lt; <span class="literal">"面积："</span> &lt;&lt; (l/<span class="numeric">2</span> - m)*m &lt;&lt; endl;
+    }    
+        
+    <span class="keyword">if</span> (a == <span class="numeric">2</span>)
+    {
+        cout &lt;&lt;  <span class="literal">"请问你要用普通方法（长+宽）x 2 求还是面积求？"</span>&lt;&lt; endl;
+        cout &lt;&lt;  <span class="literal">"1.用普通方法（长x宽）求 2.用面积求"</span>&lt;&lt; endl;
+        cin &gt;&gt; n;
+        
+        <span class="keyword">if</span> (n == <span class="numeric">1</span>)
+        {
+            cout &lt;&lt; <span class="literal">"请输入长："</span>&lt;&lt; endl;
+            cin &gt;&gt; b;
+            cout &lt;&lt; <span class="literal">"请输入宽："</span>&lt;&lt; endl;
+            cin &gt;&gt; c;
+            cout &lt;&lt; <span class="literal">"周长："</span> &lt;&lt; <span class="numeric">2</span>*(b+c) &lt;&lt; endl;
+        }
+     
+        <span class="keyword">if</span> (n == <span class="numeric">2</span>)
+        {
+            cout &lt;&lt; <span class="literal">"请输入面积："</span>&lt;&lt; endl;
+            cin &gt;&gt; o;
+            cout &lt;&lt; <span class="literal">"请输入长："</span>&lt;&lt; endl;
+            cin &gt;&gt; p;
+            cout &lt;&lt; <span class="literal">"宽："</span> &lt;&lt; o/p &lt;&lt; endl;
+            cout &lt;&lt; <span class="literal">"周长："</span>&lt;&lt; (p+o/p)*<span class="numeric">2</span> &lt;&lt; endl;
+        }
+    }    
+    <span class="keyword">if</span> (a == <span class="numeric">3</span>)
+    {
+        cout &lt;&lt;  <span class="literal">"请问你要用面积求还是周长求？"</span>&lt;&lt; endl;
+        cout &lt;&lt;  <span class="literal">"1. 用面积求 2. 用周长求"</span>&lt;&lt; endl;
+        cin &gt;&gt; e;
+        <span class="keyword">if</span> (e == <span class="numeric">1</span>)
+    {
+        cout &lt;&lt; <span class="literal">"请输入面积："</span>&lt;&lt; endl;
+        cin &gt;&gt; f;
+        cout &lt;&lt; <span class="literal">"请输入宽："</span>&lt;&lt; endl;
+        cin &gt;&gt; g;
+        cout &lt;&lt; <span class="literal">"长："</span> &lt;&lt; f/g &lt;&lt; endl;
+    }    
+        <span class="keyword">if</span> (e == <span class="numeric">2</span>)
+        {
+            cout &lt;&lt; <span class="literal">"请输入周长："</span>&lt;&lt; endl;
+            cin &gt;&gt; h;
+            cout &lt;&lt; <span class="literal">"请输入宽："</span>&lt;&lt; endl;
+            cin &gt;&gt; i;
+            cout &lt;&lt; <span class="literal">"长："</span>&lt;&lt; h/<span class="numeric">2</span>-i &lt;&lt; endl;
+        }
+    }
+    <span class="keyword">if</span> (a == <span class="numeric">4</span>)
+    {
+        cout &lt;&lt;  <span class="literal">"请问你要用面积求还是周长求？"</span>&lt;&lt; endl;
+        cout &lt;&lt;  <span class="literal">"1. 用面积求 2. 用周长求"</span>&lt;&lt; endl;
+        cin &gt;&gt; e;
+        <span class="keyword">if</span> (e == <span class="numeric">1</span>)
+    {
+        cout &lt;&lt; <span class="literal">"请输入面积："</span>&lt;&lt; endl;
+        cin &gt;&gt; f;
+        cout &lt;&lt; <span class="literal">"请输入长："</span>&lt;&lt; endl;
+        cin &gt;&gt; g;
+        cout &lt;&lt; <span class="literal">"宽："</span> &lt;&lt; f/g &lt;&lt; endl;
+    }    
+        <span class="keyword">if</span> (e == <span class="numeric">2</span>)
+        {
+            cout &lt;&lt; <span class="literal">"请输入周长："</span>&lt;&lt; endl;
+            cin &gt;&gt; h;
+            cout &lt;&lt; <span class="literal">"请输入长："</span>&lt;&lt; endl;
+            cin &gt;&gt; i;
+            cout &lt;&lt; <span class="literal">"宽："</span>&lt;&lt; h/<span class="numeric">2</span>-i &lt;&lt; endl;
+        }
+    }    
+        
+    }
+    <span class="keyword">if</span> (gco ==<span class="numeric">3</span>)
+    {
+    cout &lt;&lt; <span class="literal">"欢迎使用非按键计算器"</span>&lt;&lt; endl;
+    sleep (<span class="numeric">2</span>);
+    cout &lt;&lt; <span class="literal">"请问你要"</span>&lt;&lt; endl;
+    cout &lt;&lt; <span class="literal">"1.加法 2.减法 3.乘法 4.除法（保留整数）5.除法（保留小数）"</span>&lt;&lt; endl;
+    <span class="keyword">float</span> ttd,jiaone,jiatwo,jianbei,jianjian,chengone,chengtwo,cxone,cxtwo;
+    <span class="keyword">int</span> czone,cztwo;
+    cin &gt;&gt; ttd;
+    <span class="keyword">if</span> (ttd == <span class="numeric">1</span>)
+    {
+        cout &lt;&lt; <span class="literal">"请输入加数1"</span>&lt;&lt; endl;
+        cin &gt;&gt; jiaone;
+        cout &lt;&lt; <span class="literal">"请输入加数2"</span>&lt;&lt; endl;
+        cin &gt;&gt; jiatwo;
+        cout &lt;&lt; <span class="literal">"和："</span>&lt;&lt; jiaone + jiatwo &lt;&lt;endl;
+    }   
+    <span class="keyword">if</span> (ttd == <span class="numeric">2</span>)
+    {
+        cout &lt;&lt; <span class="literal">"请输入被减数"</span>&lt;&lt; endl;
+        cin &gt;&gt; jianbei;
+        cout &lt;&lt; <span class="literal">"请输入减数"</span>&lt;&lt; endl;
+        cin &gt;&gt; jianjian;
+        cout &lt;&lt; <span class="literal">"差："</span>&lt;&lt; jianbei - jianjian &lt;&lt;endl;
+    }   
+    <span class="keyword">if</span> (ttd == <span class="numeric">3</span>)
+    {
+        cout &lt;&lt; <span class="literal">"请输入因数1"</span>&lt;&lt; endl;
+        cin &gt;&gt; chengone;
+        cout &lt;&lt; <span class="literal">"请输入因数2"</span>&lt;&lt; endl;
+        cin &gt;&gt; chengtwo;
+        cout &lt;&lt; <span class="literal">"积："</span>&lt;&lt; chengone * chengtwo &lt;&lt;endl;
+    } 
+    <span class="keyword">if</span> (ttd == <span class="numeric">4</span>)
+    {
+        cout &lt;&lt; <span class="literal">"请输入被除数"</span>&lt;&lt; endl;
+        cin &gt;&gt; czone;
+        cout &lt;&lt; <span class="literal">"请输入除数"</span>&lt;&lt; endl;
+        cin &gt;&gt; cztwo;
+        cout &lt;&lt; <span class="literal">"商："</span>&lt;&lt; czone / cztwo &lt;&lt;endl;
+    }  
+     <span class="keyword">if</span> (ttd == <span class="numeric">5</span>)
+    {
+        cout &lt;&lt; <span class="literal">"请输入被除数"</span>&lt;&lt; endl;
+        cin &gt;&gt; cxone;
+        cout &lt;&lt; <span class="literal">"请输入除数"</span>&lt;&lt; endl;
+        cin &gt;&gt; cxtwo;
+        cout &lt;&lt; <span class="literal">"商："</span>&lt;&lt; cxone / cxtwo &lt;&lt;endl;
+    }        
+    }
+    }
+    <span class="keyword">return</span> <span class="numeric">0</span>;
+}
+
+</pre>
+</body>
+</html>
