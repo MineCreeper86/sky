@@ -22,7 +22,7 @@ class Fans {
 		URL url=new URL("https://api.bilibili.com/x/relation/stat?vmid="+this.uuid+"&jsonp=jsonp");
 		URLConnection connecation=url.openConnection();
 		InputStream is= connecation.getInputStream();
-		BufferedInputStream bis=new BufferedInputStream(is);//»º³åÊäÈëÁ÷
+		BufferedInputStream bis=new BufferedInputStream(is);//Â»ÂºÂ³Ã¥ÃŠÃ¤ÃˆÃ«ÃÃ·
 		OutputStream os=new FileOutputStream("D:/fandata.txt");
 		BufferedOutputStream bos=new BufferedOutputStream(os);
 		byte[] b=new byte[p];
