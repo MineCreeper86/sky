@@ -14,9 +14,9 @@ public static void main(String[] args) throws Exception {
 	Date now = new Date();
 	SimpleDateFormat df=new SimpleDateFormat("yy-MM-dd HH:mm:ss");
 	SimpleDateFormat df2=new SimpleDateFormat("yy-MM-dd HH:mm:ss.S");
-	Font normalbig = new Font("Î¢ÈíÑÅºÚ",Font.PLAIN,14);
+	Font normalbig = new Font("å¾®è½¯é›…é»‘",Font.PLAIN,14);
 	Font display = new Font("Book Antiqua",Font.BOLD,40);
-    JFrame f = new JFrame("·ÛË¿Á¿¼àÊÓ");//´´½¨´°¿Ú
+    JFrame f = new JFrame("ç²‰ä¸é‡ç›‘è§†");//åˆ›å»ºçª—å£
     Image icon = (new ImageIcon("D:/java/GoldenEggsFans/objtitle.jpg")).getImage();
 	f.setIconImage(icon);
     f.setSize(800, 800);
@@ -25,41 +25,41 @@ public static void main(String[] args) throws Exception {
 	f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	f.setResizable(false);
 	f.setFocusable(true);
-	JLabel f1 = new JLabel("µ±Ç°·ÛË¿");//ÌáÊ¾
+	JLabel f1 = new JLabel("å½“å‰ç²‰ä¸");//æç¤º
     f1.setBounds(50, 50, 100, 250);
     f1.setFont(normalbig);
     f.add(f1);
-    JLabel f2 = new JLabel("Ã¿¼¸Ãë+1");//ÌáÊ¾
+    JLabel f2 = new JLabel("æ¯å‡ ç§’+1");//æç¤º
     f2.setBounds(50, 150, 100, 250);
     f2.setFont(normalbig);
     f.add(f2);
-    JLabel f3 = new JLabel("Ô¤¼Æµ½´ï");//ÌáÊ¾
+    JLabel f3 = new JLabel("é¢„è®¡åˆ°è¾¾");//æç¤º
     f3.setBounds(50, 250, 100, 250);
     f3.setFont(normalbig);
     f.add(f3);
-    JLabel f4 = new JLabel("´ï³ÉÊ±¼ä");//ÌáÊ¾
+    JLabel f4 = new JLabel("è¾¾æˆæ—¶é—´");//æç¤º
     f4.setBounds(50, 350, 100, 250);
     f4.setFont(normalbig);
     f.add(f4);
-	JLabel output = new JLabel("plz wait");//ÌáÊ¾
+	JLabel output = new JLabel("plz wait");//æç¤º
 	Color fg = new Color(255,110,110);
 	output.setBounds(120, 45, 500, 250);
 	output.setFont(display);
 	output.setForeground(fg);
     f.add(output);
-    JLabel output2 = new JLabel("plz wait");//ÌáÊ¾
+    JLabel output2 = new JLabel("plz wait");//æç¤º
     Color fg2 = new Color(110,255,110);
 	output2.setBounds(120, 145, 500, 250);
 	output2.setFont(display);
 	output2.setForeground(fg2);
     f.add(output2);
-    JLabel output3 = new JLabel("plz wait");//ÌáÊ¾
+    JLabel output3 = new JLabel("plz wait");//æç¤º
     Color fg3 = new Color(110,110,255);
 	output3.setBounds(120, 245, 500, 250);
 	output3.setFont(display);
 	output3.setForeground(fg3);
     f.add(output3);
-    JLabel output4 = new JLabel("plz wait");//ÌáÊ¾
+    JLabel output4 = new JLabel("plz wait");//æç¤º
     Color fg4 = new Color(255,0,0);
 	output4.setBounds(120, 345, 500, 250);
 	output4.setFont(display);
