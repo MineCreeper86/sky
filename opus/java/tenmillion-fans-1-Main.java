@@ -13,8 +13,8 @@ public class Main {
 public static void main(String[] args) throws Exception {
     boolean copyright_agree = false;//请先将其改为true，否则无法使用。
 	if(!copyright_agree){
-		System.out.println("\033[31;4m" + "Oh!你还没有同意版权条款：凌空工作室拥有追究权利，禁止倒卖。" + "\033[0m");
-		System.exit(0);
+		System.out.println("Oh!你还没有同意版权条款：凌空工作室拥有追究权利，禁止倒卖。");
+		System.exit(170001);
 	}
 	Date date = new Date();
 	Date now = new Date();
