@@ -1,6 +1,7 @@
-<head>
-    <title>老番茄千万粉预计 - 构造器类 Fans</title>
-    <style type="text/css">
+<html><head>
+<title>名称 - 类类别 类名称</title>
+  <style type="text/css">
+    <!--code { font-family: Courier New, Courier; font-size: 10pt; margin: 0px; }-->
     a{
       text-decoration:none;
     }
@@ -11,16 +12,24 @@
       width:100px;
       height:20px;
     }
-    </style>
+  </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
 <body>
-    代码预览：<a href="tenmillion-fans-1-Fans.java" download="Fans.java"><div id="download"><font color=White>下载</font></div></a><br>
-    <code>
+代码预览：<a href="tenmillion-fans-1-Main.java" download="Main.java"><div id="download"><font color=White>下载</font></div></a><br>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+<code>
 <font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.io.BufferedInputStream;</font><br />
 <font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.io.BufferedOutputStream;</font><br />
 <font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.io.BufferedReader;</font><br />
 <font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.io.File;</font><br />
 <font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.io.FileOutputStream;</font><br />
 <font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.io.FileReader;</font><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.io.IOException;</font><br />
 <font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.io.InputStream;</font><br />
 <font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.io.OutputStream;</font><br />
 <font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.net.URL;</font><br />
@@ -28,16 +37,19 @@
 <font color="#ffffff"></font><br />
 <font color="#7f0055"><b>class&nbsp;</b></font><font color="#000000">Fans&nbsp;</font><font color="#000000">{</font><br />
 <font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">uuid;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#7f0055"><b>boolean&nbsp;</b></font><font color="#000000">noticed&nbsp;=&nbsp;</font><font color="#7f0055"><b>false</b></font><font color="#000000">;</font><br />
 <font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">Fans</font><font color="#000000">(</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">uuid</font><font color="#000000">)&nbsp;{</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;TODO&nbsp;Auto-generated&nbsp;constructor&nbsp;stub</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>this</b></font><font color="#000000">.uuid&nbsp;=&nbsp;uuid;</font><br />
 <font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
 <font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">getFans</font><font color="#000000">()&nbsp;</font><font color="#7f0055"><b>throws&nbsp;</b></font><font color="#000000">Exception&nbsp;</font><font color="#000000">{</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">p=</font><font color="#990000">512</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">fans=</font><font color="#990000">0</font><font color="#000000">;</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">File&nbsp;file=</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">File</font><font color="#000000">(</font><font color="#2a00ff">&#34;D:/fandata.txt&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">file.createNewFile</font><font color="#000000">()</font><font color="#000000">;</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">URL&nbsp;url=</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">URL</font><font color="#000000">(</font><font color="#2a00ff">&#34;https://api.bilibili.com/x/relation/stat?vmid=&#34;</font><font color="#000000">+</font><font color="#7f0055"><b>this</b></font><font color="#000000">.uuid+</font><font color="#2a00ff">&#34;&amp;jsonp=jsonp&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">URLConnection&nbsp;connecation=url.openConnection</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>try&nbsp;</b></font><font color="#000000">{</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">InputStream&nbsp;is=&nbsp;connecation.getInputStream</font><font color="#000000">()</font><font color="#000000">;</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">BufferedInputStream&nbsp;bis=</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">BufferedInputStream</font><font color="#000000">(</font><font color="#000000">is</font><font color="#000000">)</font><font color="#000000">;</font><font color="#3f7f5f">//缓冲输入流</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">OutputStream&nbsp;os=</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">FileOutputStream</font><font color="#000000">(</font><font color="#2a00ff">&#34;D:/fandata.txt&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
@@ -51,10 +63,23 @@
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">bos.close</font><font color="#000000">()</font><font color="#000000">;</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">BufferedReader&nbsp;br=</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">BufferedReader</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">FileReader</font><font color="#000000">(</font><font color="#2a00ff">&#34;D:/fandata.txt&#34;</font><font color="#000000">))</font><font color="#000000">;</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">String&nbsp;in&nbsp;=&nbsp;br.readLine</font><font color="#000000">()</font><font color="#000000">;</font><br />
-<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">pos=in.indexOf</font><font color="#000000">(</font><font color="#2a00ff">&#34;,\&#34;follower\&#34;:&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">pos=</font><font color="#990000">0</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>try&nbsp;</b></font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">pos=in.indexOf</font><font color="#000000">(</font><font color="#2a00ff">&#34;,\&#34;follower\&#34;:&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><font color="#7f0055"><b>catch&nbsp;</b></font><font color="#000000">(</font><font color="#000000">NullPointerException&nbsp;e</font><font color="#000000">)&nbsp;{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#2a00ff">&#34;忽略了一次错误，将返回-1（这只是暂时的）&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">-</font><font color="#990000">1</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">pos2=in.indexOf</font><font color="#000000">(</font><font color="#2a00ff">&#34;}}&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">String&nbsp;text&nbsp;=&nbsp;in.substring</font><font color="#000000">(</font><font color="#000000">pos+</font><font color="#990000">12</font><font color="#000000">,&nbsp;pos2</font><font color="#000000">)</font><font color="#000000">;</font><br />
-<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">fans&nbsp;=&nbsp;Integer.parseInt</font><font color="#000000">(</font><font color="#000000">text</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">fans&nbsp;=&nbsp;Integer.parseInt</font><font color="#000000">(</font><font color="#000000">text</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><font color="#7f0055"><b>catch&nbsp;</b></font><font color="#000000">(</font><font color="#000000">IOException&nbsp;f</font><font color="#000000">)&nbsp;{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if</b></font><font color="#000000">(</font><font color="#000000">!noticed</font><font color="#000000">)&nbsp;{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#2a00ff">&#34;重视了一次错误，API返回了错误代码412，由于风控政策这个IP将暂时禁止访问API，请将注释A处延迟改为安全值50以上，并再次挂起等待（这时将每1分钟尝试刷新一次），将返回-2（这只是暂时的）&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">noticed&nbsp;=&nbsp;</font><font color="#7f0055"><b>true</b></font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">-</font><font color="#990000">2</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">fans;</font><br />
 <font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
 <font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">getFollowing</font><font color="#000000">()&nbsp;{</font><br />
@@ -64,7 +89,8 @@
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>this</b></font><font color="#000000">.uuid&nbsp;=&nbsp;uuid;</font><br />
 <font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
 <font color="#ffffff"></font><br />
-<font color="#000000">}</font></code>
+<font color="#000000">}</font>
+</code>
     
    </td>
   <!-- end source code -->
@@ -74,6 +100,6 @@
 <!-- =       END of automatically generated HTML code       = -->
 <!-- ======================================================== -->
 
-
-
-</body><br><a href="tenmillion-fans-1-Main.html">返回上级主类</a><br><a href="index.html">返回</a>
+<br><a href="tenmillion-fans-1-Main.html">返回上级主类</a>
+<br><a href="index.html">返回</a>
+</body></html>
