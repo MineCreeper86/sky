@@ -1,0 +1,38 @@
+<html><head>
+<title>名称 - 类类别 类名称</title>
+  <style type="text/css">
+    <!--code { font-family: Courier New, Courier; font-size: 10pt; margin: 0px; }-->
+    a{
+      text-decoration:none;
+    }
+    #download{
+      border-radius: 12px;
+      background: #CCFFEE;
+      padding: 5px;
+      width:100px;
+      height:20px;
+    }
+  </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body>
+代码预览：<a href="tenmillion-fans-1-Main.java" download="Main.java"><div id="download"><font color=White>下载</font></div></a><br>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+<code>
+</code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+<!-- =       END of automatically generated HTML code       = -->
+<!-- ======================================================== -->
+
+
+<br><a href="index.html">返回</a>
+</body></html>
