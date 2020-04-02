@@ -1,6 +1,7 @@
-<head>
-    <title>老番茄千万粉预计 - 主类 Main</title>
-    <style type="text/css">
+<html><head>
+<title>老番茄千万粉预计 - 主类 Main</title>
+  <style type="text/css">
+    <!--code { font-family: Courier New, Courier; font-size: 10pt; margin: 0px; }-->
     a{
       text-decoration:none;
     }
@@ -11,11 +12,18 @@
       width:100px;
       height:20px;
     }
-    </style>
+  </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 </head>
 <body>
 代码预览：<a href="tenmillion-fans-1-Main.java" download="Main.java"><div id="download"><font color=White>下载</font></div></a><br>
-<code>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#3f7f5f">//凌空工作室拥有追究权利，禁止倒卖</font><br />
 <font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.Color;</font><br />
 <font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.Font;</font><br />
 <font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.Image;</font><br />
@@ -28,6 +36,11 @@
 <font color="#ffffff"></font><br />
 <font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">Main&nbsp;</font><font color="#000000">{</font><br />
 <font color="#7f0055"><b>public&nbsp;static&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">main</font><font color="#000000">(</font><font color="#000000">String</font><font color="#000000">[]&nbsp;</font><font color="#000000">args</font><font color="#000000">)&nbsp;</font><font color="#7f0055"><b>throws&nbsp;</b></font><font color="#000000">Exception&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>boolean&nbsp;</b></font><font color="#000000">copyright_agree&nbsp;=&nbsp;</font><font color="#7f0055"><b>true</b></font><font color="#000000">;</font><font color="#3f7f5f">//请先将其改为true，否则无法使用。</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>if</b></font><font color="#000000">(</font><font color="#000000">!copyright_agree</font><font color="#000000">){</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#2a00ff">&#34;Oh!你还没有同意版权条款：凌空工作室拥有追究权利，禁止倒卖。&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.exit</font><font color="#000000">(</font><font color="#990000">2</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
 <font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">Date&nbsp;date&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Date</font><font color="#000000">()</font><font color="#000000">;</font><br />
 <font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">Date&nbsp;now&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Date</font><font color="#000000">()</font><font color="#000000">;</font><br />
 <font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">SimpleDateFormat&nbsp;df=</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">SimpleDateFormat</font><font color="#000000">(</font><font color="#2a00ff">&#34;yy-MM-dd&nbsp;HH:mm:ss&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
@@ -93,8 +106,11 @@
 <font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">fanaverage&nbsp;=&nbsp;</font><font color="#990000">2147483647</font><font color="#000000">;</font><br />
 <font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>long&nbsp;</b></font><font color="#000000">time;</font><br />
 <font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>while</b></font><font color="#000000">(</font><font color="#7f0055"><b>true</b></font><font color="#000000">)&nbsp;{</font><br />
-<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Thread.sleep</font><font color="#000000">(</font><font color="#990000">100</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Thread.sleep</font><font color="#000000">(</font><font color="#990000">100</font><font color="#000000">)</font><font color="#000000">;</font><font color="#3f7f5f">//A处，刷新延迟，请大于50ms</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">fan=fans.getFans</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if</b></font><font color="#000000">(</font><font color="#000000">fan==-</font><font color="#990000">2</font><font color="#000000">)&nbsp;{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Thread.sleep</font><font color="#000000">(</font><font color="#990000">60000</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">fanabs&nbsp;=&nbsp;fan-fanstart;</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if</b></font><font color="#000000">(</font><font color="#000000">fanabs!=</font><font color="#990000">0</font><font color="#000000">)&nbsp;{</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">fanaverage&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#7f0055"><b>int</b></font><font color="#000000">)</font><font color="#000000">Math.round</font><font color="#000000">((</font><font color="#7f0055"><b>float</b></font><font color="#000000">)(</font><font color="#000000">System.currentTimeMillis</font><font color="#000000">()&nbsp;</font><font color="#000000">-&nbsp;start</font><font color="#000000">)&nbsp;</font><font color="#000000">/&nbsp;</font><font color="#000000">(</font><font color="#7f0055"><b>float</b></font><font color="#000000">)</font><font color="#000000">fanabs</font><font color="#000000">)</font><font color="#000000">;</font><br />
@@ -116,7 +132,9 @@
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br />
 <font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
 <font color="#000000">}</font><br />
-<font color="#000000">}</font></code>
+<font color="#000000">}</font><br />
+<font color="#ffffff"></font><font color="#ffffff">
+</font></code>
     
    </td>
   <!-- end source code -->
@@ -127,5 +145,5 @@
 <!-- ======================================================== -->
 
 
-
-</body><br><a href="index.html">返回</a>
+<br><a href="index.html">返回</a>
+</body></html>
